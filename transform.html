@@ -17,22 +17,133 @@
             border: 3px solid black;
             height: 200px;
             width: 200px;
-
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            font-size: 40px;
+            transition:transform 5s ease;
+        }
+        .box1:hover{
+            transform: translate(150px,150px);
+        }
+        .box2:hover{
+            transform: translate(200px);
+        }
+        .box3:hover{
+            transform: translateY(300px);
+        }
+        .box4:hover{
+            transform: rotate(180deg);
+        }
+        .box5:hover{
+            transform:skewX(30deg) ;
+        }
+        .box6:hover{
+            transform:skewY(80deg) ;
+        }
+        .box7:hover{
+            transform:skew(50deg,50deg) ;
+        }
+        .box8:hover{
+            transform:scale(5) ;
+        }
+        .box9:hover{
+            transform:scale(5) translate(150px,150px) rotate(180deg) skew(50deg,50deg);
+        }
+        .img-wrapper{
+            width: 500px;
+            height: 500px;
+            border: 5px solid yellowgreen;
+            position: relative;
+            overflow: hidden;
+        }
+        .inner-img{
+            width: 100%;
+            height: 100%;
+            transition: 3s;
+        }
+        .inner-img:hover{
+            transform: scale(2);
+           
+        }
+        .img-wrapper1{
+            width: 500px;
+            height: 500px;
+            border: 5px solid yellowgreen;
+            position: relative;
+            overflow: hidden;
+        }
+        .inner-img1{
+            width: 100%;
+            height: 100%;
+            transition: 3s;
+        }
+        .inner-img1:hover{
+            transform: rotate(500deg);
+           
+        }
+        .img-wrapper2{
+            width: 500px;
+            height: 500px;
+            border: 5px solid yellowgreen;
+            position: relative;
+            overflow: hidden;
+        }
+        .inner-img2{
+            width: 100%;
+            height: 100%;
+            transition: 3s;
+        }
+        .inner-img2:hover{
+            transform: translate(200px,200px);
+           
+        }
+        .img-wrapper3{
+            width: 500px;
+            height: 500px;
+            border: 5px solid yellowgreen;
+            position: relative;
+            overflow: hidden;
+        }
+        .inner-img3{
+            width: 100%;
+            height: 100%;
+            transition: 3s;
+        }
+        .inner-img3:hover{
+            transform: skew(200deg);
+           
         }
     </style>
 </head>
 <body>
+    <div class="img-wrapper">
+        <img src="imageFol/pic3.jpg" class="inner-img" alt="flower">
+     </div><br><br>
+     <div class="img-wrapper1">
+        <img src="imageFol/pic4.jpg" class="inner-img1" alt="flower1">
+     </div><br><br>
+     <div class="img-wrapper2">
+        <img src="imageFol/jungle-6897803_1280.jpg" class="inner-img2" alt="flower2">
+     </div><br><br>
+     <div class="img-wrapper3">
+        <img src="imageFol/branches-7253213_1280.jpg" class="inner-img3" alt="flower3">
+     </div>
+     <br>
+     <br>
+
     <div class="container">
-        <div class="box box1"></div>
-        <div class="box box2"></div>
-        <div class="box box3"></div>
-        <div class="box box4"></div>
-        <div class="box box5"></div>
-        <div class="box box6"></div>
-        <div class="box box7"></div>
-        <div class="box box8"></div>
-        <div class="box box9"></div>
-         <div class="box box10"></div>
+        <div class="box box1">translate X & Y</div>
+        <div class="box box2">translate X</div>
+        <div class="box box3">translate Y</div>
+        <div class="box box4">rotate</div>
+        <div class="box box5">skewX</div>
+        <div class="box box6">skewY</div>
+        <div class="box box7">skew</div>
+        <div class="box box8">scale</div>
+         <div class="box box9">multiple</div>
     </div>
+    
 </body>
 </html>
