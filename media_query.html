@@ -5,94 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        /* MEDIA QUERY*/
-        @media (min-width:320px) and (max-width:767px)
-        {
+        /*Media Query*/
+        /* mobile first,we start from the smallest viewport wigth*/
+        @media(min-width:320px) and (max-width:767px){
             body{
                 font-size: 20px;
-                background:brown;
-            
-            }
-             p{
-                display: none;
-            }
-            h1,h3{
-                color: white;
-                text-shadow: 2px;
-            }
-            .img1{
-                display:none;
-            }
-             /* Form 768px and up*/
-            @media (min-width:768px){
-                body{
-                    background-color: green;
-             }
-             p{
-                display: none;
-            }
-            h1,h3{
-                color: white;
-                text-shadow: 2px;
-            }
-            .img1{
-                display:none;
-            }
-            }
-
-            /* 1024px and up*/
-            @media (min-width:1024px){
-                body{
-                    background-color: blueviolet;
-                }
-                 p{
-                display: none;
-            }
-            h1,h3{
-                color: white;
-                text-shadow: 2px;
-            }
-            .img1{
-                display:none;
-            }
-            }
-
-             /* 1224px and up*/
-            @media (min-width :1224px){
-                body{
-                    background-color:darkslategrey;
-                }
-                 p{
-                display: none;
-            }
-            h1,h3{
-                color: white;
-                text-shadow: 2px;
-            }
-            .img1{
-                display:none;
-            }
-            }
-
-              /* 1824px and up*/
-            @media (min-width :850px) and (max-width :950px) {
-
-                body{
-                    background-color:aquamarine;
-                }
+                background: red;
             }
             p{
-                display: none;
-            }
-            h1,h3{
-                color: white;
-                text-shadow: 2px;
-            }
-            .img1{
                 display:none;
             }
-           
+            h1,h2{
+                color: white;
+            }
+            .img1{
+                display: none;
+            }
         }
+
+
+        /* From 758px and up*/
+        @media(min-width:768px){
+            body{
+                background-color: green;
+            }
+        }
+          
+        /* From 1024px and up*/
+        @media(min-width:1024px){
+            body{
+                background-color: yellow;
+            }
+        }
+
+        /* form 1224px and up*/
+        @media(min-width:1224px){
+            body{
+                background-color: olivedrab;
+            }
+        }
+         
+
+        /* Frome 1824px and up*/
+        @media(min-width:1824px){
+            body{
+                background-color: aqua;
+            }
+        }
+
+        /* max-width aquery*/
+        /* from 850px and up,until 950px*/
+        @media(min-width:850px) and (max-width:950px){
+            body{
+                background-color: purple;
+            }
+            h1,h3{
+                color: aqua;
+                font-size: 100px;
+            }
+            img1{
+                display: none;
+            }
+        }
+        
     </style>
 </head>
 <body>
