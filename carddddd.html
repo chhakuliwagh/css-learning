@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .first-card {
+            width: 300px;
+            height: 150px;
+            text-align: center;
+            font-size: 50px;
+            margin: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            position: relative;
+            top: 60px;
+            bottom:50px ;
+            
+
+        }
+
+        .card {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: all 1s ease;
+            display: flex;
+            flex-direction:row-reverse;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            /* different justify and align items:: interview*/
+            align-items: center;
+
+        }
+
+        .card:hover {
+            transform: rotateY(180deg);
+        }
+
+        .front {
+            width: 100%;
+            height: 100%;
+            position:absolute;
+            backface-visibility: hidden;
+            background: rgb(189, 48, 1);
+            color: white;
+            border-radius: 15px;
+            align-items: center;
+        }
+
+        .back {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+            background: rgb(106, 21, 21);
+            color: white;
+            transform: rotateY(180deg);
+            border-radius: 15px;
+        }
+        .second-card {
+            width: 300px;
+            height: 150px;
+            text-align: center;
+            font-size: 50px;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            position: relative;
+            left:420px;
+            top:-100px;
+            bottom: 50px;
+
+        }
+
+        .card1 {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: all 1s ease;
+            display: flex;
+            flex-direction:row-reverse;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            /* different justify and align items:: interview*/
+            align-items: center;
+
+        }
+
+        .card1:hover {
+            transform: rotateY(180deg);
+            flex-direction: row;
+        }
+
+        .front1 {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+            background: rgb(189, 48, 1);
+            color: white;
+            border-radius: 15px;
+            align-items: center;
+        }
+
+        .back1 {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+            background: rgb(96, 15, 15);
+            color: white;
+            transform: rotateY(180deg);
+            border-radius: 15px;
+        }
+        .third-card {
+            width: 300px;
+            height: 150px;
+            text-align: center;
+            font-size: 50px;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            position:relative;
+            top: -260px;
+            left: 820px;
+            bottom:50px ;
+
+        }
+
+        .card2 {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            transform-style: preserve-3d;
+            transition: all 1s ease;
+            display: flex;
+            flex-direction:row-reverse;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            /* different justify and align items:: interview*/
+            align-items: center;
+
+        }
+
+        .card2:hover {
+            transform: rotateY(180deg);
+            flex-direction: row;
+        }
+
+        .front2 {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+            background: rgb(189, 48, 1);
+            color: white;
+            border-radius: 15px;
+            align-items: center;
+        }
+
+        .back2 {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+            background: rgb(96, 15, 15);
+            color: white;
+            transform: rotateY(180deg);
+            border-radius: 15px;
+        }
+         .four-card {
+            width: 300px;
+            height: 150px;
+            text-align: center;
+            font-size: 50px;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            position: relative;
+            top: -420px;
+            left: 1200px;
+            bottom:50px ;
+
+        }
+
+        .card3 {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            transform-style: preserve-3d;
+            transition: all 1s ease;
+            display: flex;
+            flex-direction:row-reverse;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            /* different justify and align items:: interview*/
+            align-items: center;
+
+        }
+
+        .card3:hover {
+            transform: rotateY(180deg);
+            flex-direction: row;
+        }
+
+        .front3 {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+            background: rgb(189, 48, 1);
+            color: white;
+            border-radius: 15px;
+            align-items: center;
+        }
+
+        .back3 {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+            background: rgb(96, 15, 15);
+            color: white;
+            transform: rotateY(180deg);
+            border-radius: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="first-card">
+        <div class="card">
+            <div class="front">front</div>
+            <div class="back">back</div>
+        </div>
+    </div>
+
+    <div class="second-card">
+        <div class="card1">
+            <div class="front1">front1</div>
+            <div class="back1">back1</div>
+
+        </div>
+    </div>
+<div class="third-card">
+        <div class="card2">
+            <div class="front2">front2</div>
+            <div class="back2">back2</div>
+        </div>
+    </div>
+     <div class="four-card">
+        <div class="card3">
+            <div class="front3">front3</div>
+            <div class="back3">back3</div>
+        </div>
+    </div>
+</body>
+
+</html>
